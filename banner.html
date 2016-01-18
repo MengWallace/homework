@@ -31,24 +31,12 @@ window.onload=function(){
 		aLi[(iNow+1)%aLi.length].className='r1';
 		aLi[(iNow+2)%aLi.length].className='r2';
 	};
-	oBtn2.onclick=function(){
-		iNow--;
-		for(var i=0;i<aLi.length;i++){
-			aLi[i].className='';
-		}
-		aLi[((iNow-2)%aLi.length+aLi.length)%aLi.length].className='l2';
-		aLi[((iNow-1)%aLi.length+aLi.length)%aLi.length].className='l1';
-		aLi[iNow%aLi.length].className='cur';
-		aLi[((iNow+1)%aLi.length+aLi.length)%aLi.length].className='r1';
-		aLi[((iNow+2)%aLi.length+aLi.length)%aLi.length].className='r2';
-	};
 };
 </script>
 </head>
 
 <body>
 <input type="button" value="下一个" />
-<input type="button" value="上一个" />
 <ul>
 	<li class="l2"><img src="../img/1.jpg" /></li>
 	<li class="l1"><img src="../img/2.jpg" /></li>
